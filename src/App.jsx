@@ -28,6 +28,7 @@ function App() {
       return {
         ...prevProjectState,
         projects: [...prevProjectState.projects, newProject],
+        selectedProjectID: undefined,
       };
     });
   }
@@ -44,7 +45,7 @@ function App() {
 
   return (
     <main className="flex gap-8">
-      <ProjectSidebar onAddProject={handleNoSelectedProject} />
+      <ProjectSidebar onAddProject={handleNoSelectedProject} project={projectState.projects} />
       {content}
     </main>
   );

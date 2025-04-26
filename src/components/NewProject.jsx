@@ -34,7 +34,7 @@ export default function NewProject({ onAdd, onCancel }) {
         <p className="text-stone-500 text-lg font-semibold">Please make sure that you provide valid input value for every input field.</p>
       </Modal>
 
-      <div className="w-[35rem] mt-20">
+      <div className="w-full mt-20 pe-10">
         <menu className="flex justify-end items-center gap-8">
           <button onClick={onCancel} className="text-xl text-stone-800 hover:text-stone-900 font-semibold">
             Cancel

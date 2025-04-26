@@ -9,7 +9,7 @@ export default function ProjectSidebar({ onAddProject, project, onSelectedProjec
       </div>
       <ul>
         {project.map((project) => {
-          let cssClasses = "text-left text-md  rounded-sm hover:text-stone-300 hover:bg-stone-700 w-full py-1 px-4";
+          let cssClasses = "text-left text-md  rounded-sm hover:text-stone-300 hover:bg-stone-700 w-full py-1 px-4 rounded-lg";
 
           if (project.id === selectedProjectId) {
             cssClasses += " text-stone-300 bg-stone-700";
